@@ -16,6 +16,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
+app.get('/loaderio-5e9725908d68dae475523e3fc672da97', (req, res) => {
+  res.sendFile(path.join(__dirname, 'loaderio-5e9725908d68dae475523e3fc672da97.txt'))
+})
+
 
 // app.get('/items', (req, res) => {
 //     axios.get('http://http://18.216.12.255:3000/items')
